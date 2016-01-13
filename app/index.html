@@ -34,8 +34,8 @@
         
         	<ul class="nav navbar-nav navbar-left">
 				<li><a href="/">HOME</a></li>
-				<li><a href="/service">SERVICE</a></li>
-				<li><a href="/about">ABOUT</a></li>
+				<li><a href="/#/service">SERVICE</a></li>
+				<li><a href="/#/about">ABOUT</a></li>
             </ul>
             
           <form class="navbar-form navbar-right">
@@ -54,7 +54,7 @@
     
     
  	<div class="container">
-	<h1>User Manager</h1>
+	
     <div class="page"></div>
 		
       <hr class="featurette-divider">
@@ -66,6 +66,26 @@
       </footer>
     </div> <!-- /container -->
 
+	<script type="text/template" id="service-template">
+		<h2>Service</h2>
+		<p>This is service-template</p>
+	</script>
+	
+	<script type="text/template" id="about-template">
+		<h2>About</h2>
+		<p>This is about-template</p>
+	</script>
+	
+	<script type="text/x-handlebars-template" id="home-template">
+		<h2>Home</h2>
+		<p>This is about-template</p>
+	</script>
+	
+	<script type="text/template" id="myLibrary-template">
+		<p>This is a myLibrary-template</p>
+	</script>
+	
+	
   <script type="text/template" id="user-list-template">
     <a href="#/new" class="btn btn-primary">New</a>
     <hr />
@@ -92,6 +112,11 @@
 	<script src="lib/jquery/jquery.js"></script>
 	<script src="lib/bootstrap/bootstrap.js"></script>
 	<script src="lib/backbone/backbone.js"></script>
+	<script src="lib/handlebars/handlebars.js"></script>
+	<script src="js/view/about.js"></script>
+	<script src="js/view/service.js"></script>
+	<script src="js/view/home.js"></script>
+	<script src="js/router.js"></script>
 	<script src="js/app.js"></script>
 </body>
 </html>
