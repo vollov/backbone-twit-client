@@ -14,7 +14,7 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 5000);
-app.use(favicon(__dirname + '/favicon.ico'));
+app.use(favicon(__dirname + '/app/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(methodOverride());
 app.use(session({ resave: true,
