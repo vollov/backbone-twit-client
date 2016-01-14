@@ -24,7 +24,7 @@ app.PostView = Backbone.View.extend({
 app.PostListView = Backbone.View.extend({
 	el : '.page',
 	template: Handlebars.compile($("#post-list-template").html()),
-	
+	model: null,
 	initialize:  function(users){
 		var self = this;
 		console.log('HomeView initialize()');
@@ -52,8 +52,8 @@ app.PostListView = Backbone.View.extend({
 //			}).render().el);
 //		});
 		
-		this.collection.each(function(model){
-			console.log('post -' + model);
+		self.model.each(function(model){
+			console.log('post -' + model.title);
 		});
 		
 		return self;
